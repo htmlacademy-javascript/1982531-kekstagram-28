@@ -1,3 +1,4 @@
+module4-task1
 const MIN_LIKES = 15;
 const MAX_LIKES = 200;
 const MIN_NUMBER_AVATAR = 1;
@@ -64,3 +65,7 @@ const createPost = (index) => ({
 
 const postsArray = () => Array.from({length: QUANTITY_OF_POSTS}, (_, index) => createPost(index + 1));
 postsArray();
+
+
+
+ master
