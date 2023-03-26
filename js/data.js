@@ -40,15 +40,20 @@ const createComment = (index) => ({
   name: creatRandomArrayElement(NAMES)
 });
 
+const getComment = () => Array.from({length: getRandomPositiveInterger(0, 15)}, createComment);
+
+
 const createPost = (index) => ({
   id: index,
-  url: `photo/${index}.jpg`,
+  url: `photos/${index}.jpg`,
   description: creatRandomArrayElement(DESCRIPTIONS),
   likes: getRandomPositiveInterger(MIN_LIKES, MAX_LIKES),
-  comments: createComment()
+  comments: getComment()
 });
 
 const postsArray = () => Array.from({length: QUANTITY_OF_POSTS}, (_, index) => createPost(index + 1));
+
 postsArray();
 
 export {postsArray};
+
