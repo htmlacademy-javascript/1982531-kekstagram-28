@@ -11,7 +11,9 @@ const getRandomPositiveInterger = (a, b) => {
 const creatRandomArrayElement = (elements) =>
   elements[getRandomPositiveInterger(0, elements.length - 1)];
 
+const isEscapeKey = (evt) => evt.key === 'Escape';
 
-export {getRandomPositiveInterger, creatRandomArrayElement};
+
+export { getRandomPositiveInterger, creatRandomArrayElement, isEscapeKey };
 
 

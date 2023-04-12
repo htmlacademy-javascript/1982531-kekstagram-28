@@ -1,4 +1,4 @@
-import {getRandomPositiveInterger, creatRandomArrayElement} from './util.js';
+import { getRandomPositiveInterger, creatRandomArrayElement } from './util.js';
 const MIN_LIKES = 15;
 const MAX_LIKES = 200;
 const MIN_NUMBER_AVATAR = 1;
@@ -51,9 +51,8 @@ const createPost = (index) => ({
   comments: getComment()
 });
 
-const postsArray = () => Array.from({length: QUANTITY_OF_POSTS}, (_, index) => createPost(index + 1));
+const createListPosts = () => Array.from({length: QUANTITY_OF_POSTS}, (_, index) => createPost(index + 1));
 
-postsArray();
+export { createListPosts, createComment };
 
-export {postsArray};
 
