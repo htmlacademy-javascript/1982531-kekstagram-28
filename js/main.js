@@ -1,5 +1,7 @@
-import {postsArray} from './data.js';
-import './createphoto.js';
+import { createListPosts } from './data.js';
+import { renderThumbnails } from './thumbnails.js';
+import './full-photo.js';
 
-postsArray();
+renderThumbnails();
+createListPosts();
 
