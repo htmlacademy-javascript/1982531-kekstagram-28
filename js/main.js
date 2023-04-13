@@ -1,7 +1,8 @@
 import { createListPosts } from './data.js';
 import { renderThumbnails } from './thumbnails.js';
-import './full-photo.js';
+import { renderFullPhoto } from './full-photo.js';
 
 renderThumbnails();
 createListPosts();
+renderFullPhoto();
 
